@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } */
+        div{
+            border: 1px solid purple;
+            width: 28rem;
+            height: 8rem;
+            overflow: auto;
+            animation-name: para;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes para{
+            form{
+                left: 0
+            }
+            to{
+                left:100% 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="contactHeading" style="text-align: center; text-transform: uppercase;">Contact Form</h1>
+        <p class="para" style="text-align: center; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 3rem;">
+            Please fill the form</p>
+    </header>
+
+    <form action="index.php" style="display: flex; flex-direction: column; width: 21rem; margin: auto; ">
+
+        Name: <input type="text" name="username"><br>
+        E-mail: <input type="email" name="email"><br>
+        Contact Number: <input type="number" name="number" min="1" max="4"><br>
+        Telephone Number: <input type="tel" name="telnumber"><br>
+        Url: <input type="url" name="url"><br>
+        Search: <input type="search" name="search"><br>
+        <input type="submit" name="submit" value="Click to Submit"><br>
+        <input type="reset" name="reset"><br>
+
+        <label for="datetime">Date with time</label>
+        <input type="datetime-local" name="datetime"><br>
+
+        Date<input type="date" name="datetime"><br>
+        Time<input type="time" name="datetime"><br>
+
+        Points:<input type="range" name="range" min="1" max="10">
+
+        <label for="textarea">Please write your thoughts:</label>
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea><br>
+        <h3>HTML Table</h3>
+        <table border="1" cellspacing="0" cellpadding="7rem" style="text-align:center">
+            <tr>
+                <th>ID</th>
+                <th rowspan="2">NAME</th>
+                <th>WORK</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chintu</td>
+                <td>Software Dev</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2">chintu</td>
+                <td>Software Dev</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>chintu</td>
+                <td>Software Dev</td>
+            </tr>
+        </table>
+
+        <!-- lists type= circle, disk, square -->
+        <h3>HTML Lists</h3>
+        <ul type="circle">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+        <ol type="A">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ol>
+
+        <h4>Select your f bike</h4>
+        <select name="select" id="selectOption">
+            <option value="Ninjah2r">Ninja H2r</option>
+            <option value="yamaham2">Yamaha m2</option>
+            <option value="ducati">Ducati1000</option>
+        </select>
+
+    </form>
+
+    <hr>
+    <br><br>
+
+    <p><b>Gender:</b></p>
+    Male<input type="radio" name="gender">
+    Female<input type="radio" name="gender">
+    Other<input type="radio" name="gender">
+
+    <p>chin<sub>2</sub>kurrey</p>
+    <p>chin<sup>2</sup>kurrey</p>
+    <p><u>chintu kurrey</u></p>
+    <del>chintu kurrey</del><br>
+    <em>chintu kurrey</em><br>
+    <i>chintu kurrey</i><br>
+    <b>chintu kurrey</b><br>
+    <strong>chintu kurrey</strong>
+    <!-- em react like italil char  -->
+    <p>Lorem, ipsum dolor sit amet consectetur <mark>hello chintu</mark> adipisicing elit. Quam quas corrupti provident!
+    </p>
+
+    <input type="checkbox" name="checkbox"> I read this content <br><br>
+    Color: <input type="color" name="color"><br><br>
+
+    Week: <input type="week" name="week">
+
+    <br><br>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corporis necessitatibus amet consequatur
+            labore ex exercitationem omnis incidunt eaque expedita quibusdam modi recusandae debitis, autem corrupti
+            doloremque odit reiciendis dolor quae minima at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptatem ullam facere aliquid sapiente? Sit cupiditate quos dolore fuga iure ullam blanditiis? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Inventore, dolorem aut.lorem
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi atque voluptate asperiores dignissimos!
+        </p>
+    </div>
+</body>
+
+</html>
